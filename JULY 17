@@ -1,0 +1,200 @@
+JULY 17
+string.contains
+String name="what do you know about me";  // string name variable what value
+
+System.out.println(name.contains("do you know"));  //code to be exe.
+
+
+string.substring
+A.
+  {
+  String s="Crisbel";    // string s variable Crisbel value
+ 
+   System.out.println("Original String: " + s);  // code to  be exe.
+ 
+   System.out.println("Substring starting from index 6: " +s.substring(6));// code to be exe.  
+ 
+   System.out.println("Substring starting from index 0 to 6: "+s.substring(0,6)); //  code to be exe.
+  }
+
+B. 
+  {
+  String str1 = "java program"; // string str1 variable value java program
+
+    // from the first character to the end
+    System.out.println(str1.substring(0));  // code to be exe.
+
+    // from the 4th character to the end
+    System.out.println(str1.substring(3));  // code to be exe
+  }  
+
+string.split
+  {
+        String text= new String("Hello, My name is sir eddie");  // string text variable heloo my name is sir eddie
+        /* Splits the sentence by the delimeter passed as an argument */ 
+        
+        String[] sentences = text.split("");  // string text.split \\
+        
+        System.out.println(Arrays.toString(sentences)); // code to be exe. 
+  }
+
+string.join
+// delimiter is "->" and elements are "Wake up", 
+        // "Eat", "Play", "Sleep", "Wake up"
+  
+        String boot3 = String.join("-> ", "Wake up", "Eat",
+                      "Play", "Sleep", "Wake up"); // -> wake up eat play sleep wake up
+  
+        System.out.println(boot3); // code to be exe.
+
+string.replace
+A.
+  {
+  String str1 = "abc cba";//string str1 variable
+
+    // all occurrences of 'a' is replaced with 'z'
+    System.out.println(str1.replace('a', 'z'));  // zbc cbz replace
+
+    // all occurences of 'L' is replaced with 'J'
+    System.out.println("Lava".replace('L', 'J'));  // Java replace
+
+    // character not in the string
+    System.out.println("Hello".replace('e', 'J'));  // Hello replace 
+  }
+
+B.
+  {
+  String str1 = "C++ Programming"; // string variable str2 value C++
+
+    // all occurrences of "C++" is replaced with "Java"
+    System.out.println(str1.replace("C++", "Java"));  // Java Programming // java
+
+
+    // all occurences of "aa" is replaced with "zz"
+    System.out.println("aa bb aa zz".replace("aa", "zz")); // zz bb zz zz //zz
+
+    // substring not in the string
+    System.out.println("Java".replace("Java", "C")); // Java //C
+  }
+
+string.replaceAll
+A.
+  {
+  String s1="My name is Mark kenneth. My name is G-sel. My name is Hazel."; // string  s1 variable
+
+  String replaceString=s1.replaceAll("is","was");//replaces all occurrences of "is" to "was" //
+
+  System.out.println(replaceString);  // code to be exe.
+  }
+
+B.
+  {
+  String str1 = "aabbaaac"; // string
+    
+    String str2 = "Learn223Java55@";//string
+
+    // regex for sequence of digits
+    String regex = "\\d+"; // 
+
+    // all occurrences of "aa" is replaceAll with "zz"
+    System.out.println(str1.replaceAll("aa", "zz"));  // zzbbzzac
+
+
+    // replace a digit or sequence of digits with a whitespace
+    System.out.println(str2.replaceAll(regex, " "));  // Learn Java @
+  }
+
+
+string.at
+  {
+  String str = "Welcome to Sea Gem Java training"; // string 
+    
+    int strLength = str.length();   // ini object 
+    
+    // Fetching first character  
+    System.out.println("Character at 0 index is: "+ str.charAt(0)); // 0 index 
+    
+    // The last Character is present at the string length-1 index  
+    System.out.println("Character at last index is: "+ str.charAt(strLength-1));   // -1    
+  }
+
+
+string.index
+A.
+  {
+  String gfg = "Welcome to Sea gem Java Training"; // string
+ 
+        System.out.print("Found g first at position : "); //code to be exe.
+ 
+        // Initial index of 'g' will print
+        // prints 11
+        System.out.println(gfg.indexOf('g')); // code to be exe.
+  }
+
+B.
+  {
+  // Initialising String
+        String gfg = new String("Welcome to Sea Gem Java Training"); // string
+ 
+        System.out.print("Found g after 31th index at position : "); // code to be exe.
+ 
+        // 2nd index of 'g' will print
+        // prints 19
+        System.out.println(gfg.indexOf('g', 15)); // code to be exe.
+  }
+
+
+string.compare
+  {
+  String str1 = "Learn Java"; // string
+    String str2 = "Learn Java"; // string
+    String str3 = "Learn Kotlin"; // string
+    int result;
+
+    // comparing str1 with str2
+    result = str1.compareTo(str2);
+
+    System.out.println(result);  // 0
+
+    // comparing str1 with str3
+    result = str1.compareTo(str3);
+
+    System.out.println(result);  // -1
+
+    // comparing str3 with str1
+    result = str3.compareTo(str1);
+
+    System.out.println(result);  // 1
+  }
+
+string.trim
+  {
+  // trims the trailing and leading spaces
+        String s = " geeks for geeks has all java functions to read  "; // string
+        
+        System.out.println(s.trim());// code to be exe. trim
+ 
+        // trims the leading spaces
+        s = " Chetna loves reading books"; // variable s value 
+        
+        System.out.println(s.trim()); // code to be exe. trim
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
