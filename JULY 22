@@ -1,0 +1,426 @@
+encapsulation
+A.
+  {
+  class EncapsulationDemo{ // class
+    // Private variables (data hiding)
+    private int ssn; // SSN
+    private String empName; //Name
+    private int empAge; // Age
+
+    //Getter and Setter methods
+    public int getEmpSSN(){ // getter emp
+        return ssn; // return
+    }
+
+    public String getEmpName(){ // getter Name
+        return empName;
+    }
+
+    public int getEmpAge(){ // getter age
+        return empAge; // return
+    }
+
+    public void setEmpAge(int newValue){ // setter age
+        empAge = newValue; //ini
+    }
+
+    public void setEmpName(String newValue){ // new value
+        empName = newValue; // ini
+    }
+
+    public void setEmpSSN(int newValue){
+        ssn = newValue;  // ini
+    }
+}
+
+
+public class ExpublicEncup3 { //main class
+    
+    //public class EncapsTest{
+    public static void main(String args[]){ // main methods
+        
+         EncapsulationDemo obj = new EncapsulationDemo();// object ini.
+         
+         obj.setEmpName("Jacelyn");
+         obj.setEmpAge(19);
+         obj.setEmpSSN(112233);
+         System.out.println("Employee Name: " + obj.getEmpName()); // code to be exe.
+         System.out.println("Employee SSN: " + obj.getEmpSSN());
+         System.out.println("Employee Age: " + obj.getEmpAge());
+    } 
+}
+}
+}
+
+B.
+  {
+  class Person { // class
+	// Encapsulating the name and age
+	// only approachable and used using
+	// methods defined
+	private String name; //name
+	private int age; // age
+
+	public String getName() { return name; } // getter name
+
+	public void setName(String name) { this.name = name; } // setter name
+
+	public int getAge() { return age; } //getter age
+
+	public void setAge(int age) { this.age = age; } // setter age
+}
+
+public class ExpublicEncup2 { // main class
+    
+    // Driver Class
+//public class Main {
+	// main function
+	public static void main(String[] args) // main methods
+	{
+		// person object created
+		Person person = new Person(); // object ini
+		person.setName("John");// setter name
+		person.setAge(30);// setter age
+
+		// Using methods to get the values from the
+		// variables
+		System.out.println("Name: " + person.getName()); // code to be exe.
+		System.out.println("Age: " + person.getAge()); // code to be exe.
+	}
+}
+}
+
+C.
+  {
+  class Account {  // class
+//private data members
+    
+private long acc_no;  // account number
+
+private String name,email;  // email and name
+
+private float amount;  // amount
+
+//public getter and setter methods  
+public long getAcc_no() {   // getter
+    return acc_no;  
+}  
+
+
+
+public void setAcc_no(long acc_no) {  // setter
+    this.acc_no = acc_no;  
+}  
+
+public String getName() {  // getter name
+    return name;  
+}  
+
+public void setName(String name) {  // setter name
+    this.name = name;  
+}  
+
+
+public String getEmail() {  // getter email
+    return email;  
+}
+
+public void setEmail(String email) {  // setter email
+    this.email = email;  
+}  
+
+
+public float getAmount() {  //getter amount
+    return amount;  
+}  
+
+public void setAmount(float amount) {  
+    this.amount = amount;  // setter amount
+}  
+  
+}  
+public class ExprivateEncup4 { // main class
+    
+    //A Java class to test the encapsulated class Account.  
+//public class TestEncapsulation {  
+public static void main(String[] args) {  // main methods
+    
+    //creating instance of Account class  
+    Account acc=new Account();  // object ini
+    //setting values through setter methods  
+    
+    acc.setAcc_no(7560504000L);  
+    
+    acc.setName("Mark relan");  
+    
+    acc.setEmail("MarkRelan2gmail.com");  
+    
+    acc.setAmount(500000f);  
+    
+    //getting values through getter methods  
+    System.out.println(acc.getAcc_no()+" "+acc.getName()+" "+acc.getEmail()+" "+acc.getAmount());  // code to be exe.
+}  
+}
+}
+}
+
+D.
+  {
+  class Account {  // class
+//private data members
+    
+private long acc_no;  // account number
+
+private String name,email;  // email and name
+
+private float amount;  // amount
+
+public long getAcc_no() {   // getter
+    return acc_no;  
+}  
+
+public void setAcc_no(long acc_no) {  // setter
+    this.acc_no = acc_no;  
+}  
+
+public String getName() {  // getter name
+    return name;  
+}  
+
+public void setName(String name) {  // setter name
+    this.name = name;  
+}  
+
+
+public String getEmail() {  // getter email
+    return email;  
+}
+
+public void setEmail(String email) {  // setter email
+    this.email = email;  
+}  
+
+
+public float getAmount() {  //getter amount
+    return amount;  
+}  
+
+public void setAmount(float amount) {  
+    this.amount = amount;  // setter amount
+}  
+
+    void setBalance(double d) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setAccountNumber(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setOwnerName(String lance_Marcial) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    String getBalance() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    String getAccountNumber() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    boolean getOwnerName() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+  
+}  
+  
+  
+  
+  public class ExprivateEncup5 { // main class
+
+    
+    //A Java class to test the encapsulated class Account.  
+//public class TestEncapsulation {  
+public static void main(String[] args) {  // main methods
+    
+    //creating instance of Account class  
+    Account acc=new Account();  // object ini
+    //setting values through setter methods  
+    
+    acc.setAcc_no(121341516171L);  
+    
+    acc.setName("Lance Marcial");  
+    
+    //acc.setEmail("MarkRelan2gmail.com");  
+    
+    //acc.setAmount(500000f);  
+    
+    //getting values through getter methods  
+    //System.out.println(acc.getAcc_no()+" "+acc.getName()+" "+acc.getEmail()+" "+acc.getAmount());  
+  // code to be exe.
+  
+  System.out.println(acc.getAcc_no()+" "+acc.getName()+" ");
+}  
+}
+}
+
+E.
+  {
+class Person { // class
+
+  // private field
+  private int age; // private age
+
+  // getter method
+  public int getAge() { // getter age
+    return age;
+  }
+
+  // setter method
+  public void setAge(int age) { // setter age
+    this.age = age;
+  }
+}
+  
+  
+public class ExprivateEncup6 { // main class
+    
+  
+
+//class Main {
+  public static void main(String[] args) { // main methods
+
+    // create an object of Person
+    Person p1 = new Person(); // object ini
+
+    // change age using setter
+    p1.setAge(20);
+
+    // access age using getter
+    System.out.println("My age is " + p1.getAge()); // code to be exe.
+  }
+}
+}
+
+F.
+  {
+  class Vehicle { // class
+    
+    protected String brand; // protected member variable
+
+    protected void displayDetails() {
+        System.out.println("Brand: " + brand);
+    }
+}
+
+// Derived class
+class Car extends Vehicle {
+    private int mileage; // private member variable specific to Car
+
+    public Car(String brand, int mileage) {
+        this.brand = brand; // accessing protected member from superclass
+        this.mileage = mileage;
+    }
+
+    public void displayCarDetails() {
+        displayDetails(); // accessing protected method from superclass
+        System.out.println("Mileage: " + mileage);
+    }
+}
+
+
+public class ExprotectedEncup7 { // main class
+    
+    // Main class to test inheritance and protected access
+//class Main {
+    public static void main(String[] args) { // main methods
+        Car myCar = new Car("Toyota", 30); // object ini
+        myCar.displayCarDetails(); // display the Car details
+        
+    }
+}
+}
+
+G.
+  {
+  class Animal { // class
+    // protected method
+    
+    protected String Mammal; // protected
+    
+    protected void display() {
+        
+        System.out.println("I am an animal"); // display
+    }
+}
+
+
+class Dog extends Animal{
+
+    
+    
+    public void displayMammaldetail(){
+        System.out.println("Dog: Cute" );
+    }
+    
+}
+
+
+
+public class ExprotectedEncup8 { // main class
+    
+   // class Dog extends Animal {
+    public static void main(String[] args) { // main methods
+
+        // create an object of Dog class
+        Dog mydog = new Dog();
+         // access protected method
+        mydog.displayMammaldetail();
+        
+        
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
