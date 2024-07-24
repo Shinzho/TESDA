@@ -1,0 +1,127 @@
+
+
+INHERITANCE:
+A
+  interface Walkable { // interface
+    void walk(); 
+} 
+  
+
+
+interface Swimmable { 
+    void swim(); 
+} 
+  
+// Implement the interfaces in a class 
+class Duck implements Walkable, Swimmable { 
+    public void walk() 
+    { 
+        System.out.println("Duck is walking."); // implement
+    } 
+  
+    public void swim() 
+    { 
+        System.out.println("Duck is swimming."); 
+    } 
+} 
+  
+
+public class Exinher16 { // main class
+    
+    // Use the class to call the methods from the interfaces 
+
+    public static void main(String[] args) // main methods
+    { 
+        Duck duck = new Duck(); // object ini.
+        duck.walk(); // walk
+        duck.swim(); // swim
+    } 
+}
+
+B
+interface Printable{  // interface
+    
+void print();  // print
+
+}  
+interface Showable{  //interface
+    
+void show();  
+}  
+class A7 implements Printable,Showable{  // implements
+    
+public void print(){System.out.println("Hello");}  
+
+public void show(){System.out.println("Welcome to Java Training");}  
+
+}
+
+public class Exinher18 { // main class
+    
+public static void main(String args[]) {
+
+    A7 obj = new A7();  // object ini
+obj.print();  
+obj.show();  
+ }  
+}
+
+ABSTRACT
+A.
+// Abstract class
+abstract class Sunstar { // abs class
+	abstract void printInfo(); // printinfo
+}
+
+// Abstraction performed using extends
+class Employee extends Sunstar { // extends
+	void printInfo() {
+		String name = "maricris"; // maricris
+		int age = 21;
+		float salary = 250.50F;
+
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(salary);
+
+	}
+
+}
+
+// Base class
+//class Base {
+    public class ExampleAbs1 { // main class
+    
+
+	public static void main(String args[]) { // main methods
+		Sunstar s = new Employee();// object ini 
+		s.printInfo(); // print info
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
